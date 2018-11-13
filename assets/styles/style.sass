@@ -1,0 +1,72 @@
+@import 'modules/norminalize'
+@import 'modules/mixins'
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400')
+@import url('https://fonts.googleapis.com/css?family=Muli:600')
+
+$black:        hsl(0, 0%, 4%) 
+$black-bis:    hsl(0, 0%, 7%) 
+$black-ter:    hsl(0, 0%, 14%) 
+
+$grey-darker:  hsl(0, 0%, 21%) 
+$grey-dark:    hsl(0, 0%, 29%) 
+$grey:         hsl(0, 0%, 48%) 
+$grey-light:   hsl(0, 0%, 71%) 
+$grey-lighter: hsl(0, 0%, 86%)
+
+$white-ter:    hsl(0, 0%, 96%) 
+$white-bis:    hsl(0, 0%, 98%) 
+$white:        hsl(0, 0%, 100%) 
+
+html
+    background-color: $white
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    -moz-font-feature-settings: "liga" on
+    text-rendering: optimizeLegibility
+    font-family: 'Roboto',sans-serif
+    font-size:15px
+    color: $grey-dark
+    line-height:1.7
+
+
+a 
+    text-decoration: none
+    background-color: transparent 
+    cursor: pointer
+    transition: color .7s,border-color .7s
+
+*
+    box-sizing: border-box
+
+p 
+ font-weight:300
+ padding:8pt 0
+
+h3 
+ font-size:1.35rem
+ line-height:1.6
+
+h1,h2,h3,h4,h5,h6
+ font-weight:400
+ padding:8pt 0
+
+
+
+.container
+    width: 80%
+    max-width: 72em
+    margin: 0 auto
+    position: relative
+
+
+@import 'modules/navBar.sass'
+
+@import 'modules/header.sass'
+
+@import 'modules/steps.sass'
+
+@import 'modules/points.sass'
+
+@import 'modules/cards.sass'
+
+@import 'modules/footer.sass'

@@ -1,0 +1,77 @@
+.footer
+    background-color: #333c44
+    width: 100%
+    padding: 16pt 0
+    color: #d1d1d1
+    font-weight: 300
+    font-size: .85rem
+    float: left
+
+    +e(inner)
+        display: flex
+        -webkit-box-pack: justify
+        justify-content: space-between
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        flex-direction: column    
+    
+    +e(logo)
+        flex-shrink: 0
+        padding-right: 16pt
+        display: block
+        font-size: 1.15rem
+        min-width: 33%
+        font-family: 'Muli',sans-serif
+        color: $white
+        margin-bottom: 1.5rem
+        cursor: pointer
+        font-weight: 600
+        letter-spacing: .02rem
+        
+        +m(stressed)
+            color: $grey-light
+
+    
+    +e(data)
+        display: flex
+        -webkit-box-flex: 1
+        flex-grow: 1
+        -webkit-box-pack: justify
+        justify-content: space-between
+        padding-top: .25rem
+        flex-wrap: wrap
+        -webkit-box-orient: vertical
+        -webkit-box-direction: normal
+        flex-direction: column
+
+    +e(data__item)
+        padding-bottom: .5rem
+        display: inline-block
+        margin-bottom: 8pt
+    
+    +e(row)
+        margin-bottom: 4pt
+    
+    +e(link)
+        color: $grey-light
+        border-bottom: 1px dotted $grey-light
+        padding-bottom: .05rem
+        font-size: .875rem
+
+.fa-heart
+    color: red
+
+.footer__link:hover
+    color: $white-ter
+
+@media (min-width:600px)
+    .footer__inner
+        flex-direction: row
+
+@media (min-width: 992px)
+    .footer
+        padding: 36pt 0 16pt
+        
+    .footer__data
+        flex-wrap: nowrap
+        flex-direction: row

@@ -1,0 +1,90 @@
+.steps
+    width: 100%
+    padding: 1em 0
+    float: left
+    text-align: center
+    
+
+    +e(heading)
+        max-width: 35em
+        margin: 0 auto
+        padding: 16pt 0 0
+        font-weight: 400
+        font-size: 1.35em
+        line-height: 1.6
+    
+    +e(content)
+        font-weight: 300
+        padding: 8pt 0
+        color: $grey
+
+.steps__container
+    padding: 16pt 0
+    
+.step
+    padding: 16pt 0
+    width: 100%
+    border-top: 1px solid rgba(0,0,0,.2)
+    text-align: center
+
+    +e('img')
+        max-width: 12ch
+    
+    +e('title')
+        margin: 0 auto
+        padding: 10pt 0 0
+        font-weight: 400
+        font-size: 1.35em
+        line-height: 1.6
+    
+    +e(content)
+        max-width: 50ch
+        margin-left: auto
+        margin-right: auto
+        font-weight: 300
+        padding: 8pt 0
+        color: $grey
+
+
+@media (min-width:1400px) 
+    .steps 
+        padding:24pt 0
+
+@media (min-width: 992px)
+    .step
+        border-top: none
+        width: auto
+        margin: 0 24pt
+        padding: 16pt 0
+    .nav__item--list
+        margin-left: 1rem
+    .step__img
+        max-width: 15ch
+    .steps__container
+        -js-display: flex
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -ms-flex-pack: distribute
+        justify-content: space-around
+        padding-top: 16pt
+    .step__img
+        max-width: 15ch
+    .step p 
+        max-width:40ch
+    .steps__heading 
+        padding-top:24pt
+    
+ 
+@media (min-width:600px) 
+    .step__img
+        max-width: 15ch
+    
+   
+
+
+    
+   
+    
+
+   

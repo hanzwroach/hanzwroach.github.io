@@ -1,0 +1,70 @@
+.points
+    width: 100%
+    padding: 48pt 2.7em
+    background-color: $white-bis
+    float: left
+    
+    +e(container)
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        -webkit-box-pack: center
+
+.point
+    width: 90%
+    background-color: $white
+    position: relative
+    max-width: 44em
+    margin-bottom: 32pt
+    margin-left: 16pt
+    margin-right: 16pt
+    padding: 24pt 0
+    flex-shrink: 0
+    +box-shadow(1)
+
+    +e(texts)
+        max-width: 500px
+        margin: 0 auto
+        text-align: center
+
+    +e(title)
+        padding: 0
+        margin-bottom: 0
+        font-size: 1rem
+        font-weight: 400
+    
+    +e(text)
+        margin: 4pt 0
+        font-size: .925rem
+        font-weight: 300
+        padding: 8pt 0
+        color: $grey
+
+    +e(link)
+        color: $grey-light
+        padding-bottom: .05rem
+        padding-top: .09rem
+        font-size: .875rem
+
+.point__link:hover
+    color: $grey
+
+@media (min-width:600px) 
+ .point 
+    width:40%
+
+@media (min-width:992px) 
+ .point 
+    width:20%
+ 
+@media (min-width:1400px) 
+ .point 
+    width:22%
+
+.point::before
+    content:""
+    position: absolute
+    height: 100%
+    width: 1px
+    top: 0
+    opacity: .4 
